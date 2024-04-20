@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="sepi_mc_moon.css">
+<link rel="stylesheet" href="sepi_starry_sky.css">
+<script src="sepi_starry_sky.js"></script>
+<script src="sepi_mc_moon.js"></script>
+
+<canvas class="starry_sky_canvas" id="c"></canvas>
+<div class="sepi_mc_moon_rail">
+	<img class="sepi_mc_moon_image" src="moon.png" id="SEPI_MOON_ELEMENT">	
+	<img class="sepi_mc_spce_station" src="space_station_1.png" id="SEPI_SPACE_STATION_ELEMENT">
+	<img class="sepi_mc_crewmate" src="crewmate.png" id="SEPI_CREWMATE_ELEMENT">
+
+</div>
+
+
+
+<script>
+set_canvas_size_according_to_user_screen("c");
+fill_canvas_with_sepi_stars("c",1000);
+animate_the_moon(screen.width);
+</script>
